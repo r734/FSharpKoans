@@ -83,15 +83,15 @@ module ``about strings`` =
  (* A single character is denoted using single quotes, example: 'c',
         not double quotes as you would use for a string *)
            
-        AssertEquality first __
-        AssertEquality other __
+        AssertEquality first 'h'
+        AssertEquality other 'o'
 
     [<Koan>]
     let ApplyWhatYouLearned() =
         (* It's time to apply what you've learned so far. Fill in the function below to
            make the asserts pass *)
         let getFunFacts x =
-            __
+            sprintf "%d doubled is %d, and %d tripled is %d!" x (x*2) x (x*3)
 
         let funFactsAboutThree = getFunFacts 3
         let funFactsAboutSix = getFunFacts 6
