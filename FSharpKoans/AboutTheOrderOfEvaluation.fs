@@ -31,5 +31,6 @@ module ``about the order of evaluation`` =
             x * 2
 
         let result = double <| add 5 8
+        //let result = add 5 8 |> double // same thing
 
-        AssertEquality result __
+        AssertEquality result 26
