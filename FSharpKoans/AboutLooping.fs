@@ -19,7 +19,7 @@ module ``about looping`` =
         for value in values do
             sum <- sum + value
 
-        AssertEquality sum __
+        AssertEquality sum 55
        
     [<Koan>]
     let LoopingWithExpressions() =
